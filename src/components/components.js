@@ -1,7 +1,7 @@
 import Page from './page'
-import Grid from './grid'
-import Teaser from './teaser'
-import Feature from './feature'
+import Grid from './blok/grid'
+import Teaser from './blok/teaser'
+import Feature from './blok/feature'
 
 export default {
   page: Page,
