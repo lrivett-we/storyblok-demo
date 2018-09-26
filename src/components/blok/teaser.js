@@ -1,21 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import SbEditable from 'storyblok-react'
+import Teaser from '../objects/teaser'
 
-const Teaser = (props) => (
+const TeaserBlok = (props) => (
   <SbEditable content={props.blok}>
-    <div className="jumbotron jumbotron-fluid">
-      <div className="container">
-        <h1 className="display-4">{ props.blok.headline }</h1>
-        <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        <p className="lead">
-          <Link className="btn btn-primary" to={'/blog/'}>
-            Blog Posts
-          </Link>
-        </p>
-      </div>
-    </div>
+    <Teaser headline={props.blok.headline} />
   </SbEditable>
 )
 
-export default Teaser
+export default TeaserBlok
