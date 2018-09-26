@@ -1,4 +1,4 @@
-import Page from './page'
+import Page from './content/page'
 import Grid from './blok/grid'
 import Teaser from './blok/teaser'
 import Feature from './blok/feature'
